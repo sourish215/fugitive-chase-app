@@ -1,0 +1,29 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model City {
+  id          Int    @id @default(autoincrement())
+  name        String @unique
+  distance    Int
+  description String
+}
+
+model Vehicle {
+  id    Int    @id @default(autoincrement())
+  type  String @unique
+  range Int
+  count Int
+}
+
+model Game {
+  id               Int     @id @default(autoincrement())
+  criminalLocation String
+  captured         Boolean @default(false)
+  capturingCop     Int?
+}
