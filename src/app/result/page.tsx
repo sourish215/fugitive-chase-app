@@ -16,7 +16,7 @@ export default function Result() {
 
   return (
     <div className="min-h-screen flex flex-col justify-center items-center">
-      <h1 className="text-4xl mb-4">
+      <h1 className="text-lg md:text-4xl mb-4">
         {captured ? `Cop ${cop} Captured the Fugitive!` : "Fugitive Escaped!"}
       </h1>
       <p>Criminal was hiding in {criminal}</p>
