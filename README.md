@@ -18,8 +18,6 @@ A Next.js TypeScript application where 3 cops try to capture a criminal hiding i
 - Prisma (PostgreSQL)
 - Server Components
 - Server Actions
-- Jest
-- Playwright
 
 ## Setup Instructions
 
